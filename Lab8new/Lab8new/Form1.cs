@@ -21,16 +21,14 @@ namespace Lab8new
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            Pen bluepen = new Pen(Color.Blue, 2);
+            Pen bluepen = new Pen(Color.Black, 2);
             g.DrawRectangle(bluepen, 10, 10, 100, 100);
+            mypen.Width = 4;
+            mypen.Color = Color.Pink;
+            g.DrawEllipse(mypen, 10, 10, 200, 200);
             bluepen.Dispose();
 
-            Pen somepen = new Pen(Color.FromArgb(225, 120, 200));
-            g.DrawEllipse(somepen, 20, 20, 200, 200);
-            somepen.Dispose();
-
-            Color col = Color.FromName("LightGreen");
-            this.BackColor = col;
+            
         }
     }
 }
