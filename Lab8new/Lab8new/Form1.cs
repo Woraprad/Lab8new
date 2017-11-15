@@ -22,12 +22,15 @@ namespace Lab8new
         {
             Graphics g = e.Graphics;
             
-            Pen blackpen = new Pen(Color.Black ,3);
-
+            Pen pen = new Pen(Color.Green ,2);
+            pen.DashStyle = DashStyle.DashDot;
+            e.Graphics.DrawLine(pen, 10, 80,220,80);
+            pen.Dispose();
+            pen = new Pen(Brushes.DeepSkyBlue, 4);
             Point point1 = new Point(100, 100);
             Point point2 = new Point(200, 200);
-            e.Graphics.DrawLine(blackpen, point1, point2);
-            blackpen.Dispose();
+            e.Graphics.DrawLine(pen, 10, 120, 220, 120);
+            pen.Dispose();
             
 
 
