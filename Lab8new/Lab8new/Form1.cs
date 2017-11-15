@@ -21,12 +21,12 @@ namespace Lab8new
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            Pen bluepen = new Pen(Color.Black, 2);
-            g.DrawRectangle(bluepen, 10, 10, 100, 100);
+            Pen mypen = new Pen(Color.Black, 2);
+            g.DrawRectangle(mypen, 10, 10, 100, 100);
             mypen.Width = 4;
             mypen.Color = Color.Pink;
             g.DrawEllipse(mypen, 10, 10, 200, 200);
-            bluepen.Dispose();
+            mypen.Dispose();
 
             
         }
