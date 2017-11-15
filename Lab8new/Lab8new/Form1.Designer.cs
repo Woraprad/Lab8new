@@ -28,22 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel4 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(51, 35);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(192, 156);
-            this.panel4.TabIndex = 0;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.panel4);
             this.Name = "Form1";
+            this.Text = "Lab8 Woraprad";
+            
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
 
         }
