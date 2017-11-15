@@ -23,6 +23,7 @@ namespace Lab8new
             Graphics g = e.Graphics;
             Pen mypen = new Pen(Color.Black, 2);
             g.DrawRectangle(mypen, 10, 10, 100, 100);
+            mypen.DashStyle = DashStyle.Dash;
             mypen.Width = 4;
             mypen.Color = Color.Pink;
             g.DrawEllipse(mypen, 10, 10, 200, 200);
