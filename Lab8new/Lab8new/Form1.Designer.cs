@@ -35,18 +35,13 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Name = "Form1";
             this.Text = "Lab8 Woraprad";
-            
+
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
     }
 }
 
