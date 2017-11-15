@@ -28,6 +28,9 @@ namespace Lab8new
             Pen somepen = new Pen(Color.FromArgb(225, 120, 200));
             g.DrawEllipse(somepen, 20, 20, 200, 200);
             somepen.Dispose();
+
+            Color col = Color.FromName("LightGreen");
+            this.BackColor = col;
         }
     }
 }
